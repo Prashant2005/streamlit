@@ -16,9 +16,8 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Initialize theme state
-if 'dark_mode' not in st.session_state:
-    st.session_state.dark_mode = True
+
+st.session_state.dark_mode = False
 
 # Custom CSS with dynamic theming
 def get_custom_css():
